@@ -1,0 +1,204 @@
+
+.saved-resumes-container {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB); 
+    margin-top: 50px;
+}
+
+
+.saved-resumes-title {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.saved-resumes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.resume-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.resume-card:hover {
+    transform: translateY(-5px);
+}
+
+.resume-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resume-details {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+
+.resume-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+
+.small-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+    width: 120px; 
+    height: 40px;  
+    gap: 8px;
+}
+
+
+.preview-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.preview-btn:hover {
+    background-color: #5a6268;
+}
+
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+
+.no-resumes-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.create-new-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.create-new-link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .saved-resumes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-actions {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .small-btn {
+        width: 100px;
+        height: 38px;
+        font-size: 0.85rem;
+    }
+}
+.recent-badge {
+    float: right;
+    background-color: #d1f7d6;
+    color: #2e7d32;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-top: 4px;
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  .resume-updated {
+    font-size: 13px;
+    color: #6c757d;
+    margin-top: 4px;
+  }
+
+  .resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .download-btn {
+    background-color: #007bff;
+    color: white;
+    margin-left: 8px;
+    font-weight: 600;
+  }
+  .download-btn:hover {
+    background-color: #0056b3;
+  }
+  /* 🔍 Tiny Preview Mode */
+.tiny-preview-container {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 10px;
+    background: #f8f8f8;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  }
+  
+  .tiny-preview-wrapper {
+    transform: scale(0.3);
+    transform-origin: top left;
+    width: 100%;
+  }
+  

@@ -1,0 +1,131 @@
+/* 📌 Resume Template Base - Full Layout Fix */
+.template1 {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;  /* Ensures it doesn't stretch too wide */
+  margin: auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: "Arial", sans-serif;
+  color: #333;
+  align-items: stretch;  /* Ensures both columns take equal height */
+}
+
+/* ✅ Left Sidebar */
+.template1 .resume_left {
+  background: #2C3E50;
+  color: white;
+  padding: 30px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  align-items: center;
+}
+
+/* ✅ Fix Profile Header Spacing */
+.template1 .profile-header {
+  text-align: center;
+  width: 100%;
+}
+
+.template1 .profile-header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* ✅ Fix Contact, Skills, Certifications Boxes */
+.template1 .contact-card,
+.template1 .skills-card,
+.template1 .certifications-card,
+.template1 .languages-card {
+  background: #34495E;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ✅ Right Main Content */
+.template1 .resume_right {
+  flex-grow: 1; /* Makes the right section take up remaining space */
+  padding: 30px;
+  width: 65%;
+  background: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* ✅ Work Experience, Education, and Projects */
+.template1 .experience-card,
+.template1 .education-card,
+.template1 .projects-card {
+  border: 1px solid #2C3E50;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ✅ Ensure Grid Layout Doesn't Break */
+.template1 .resume-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* ✅ Work Item Spacing Fix */
+.template1 .work-item,
+.template1 .education-item,
+.template1 .project-item {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* ✅ Fix Full-Screen Stretching Issue */
+.template1 .resume-preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 1024px) {
+  .template1 {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .template1 .resume_left {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .template1 .resume_right {
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .template1 {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .template1 .resume_left,
+  .template1 .resume_right {
+    width: 100%;
+    padding: 20px;
+  }
+}

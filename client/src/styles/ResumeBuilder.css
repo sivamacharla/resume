@@ -1,0 +1,399 @@
+/* Resume Builder Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB);
+    margin: 0;
+    padding: 0;
+  }
+  .resume-header-builder {
+   
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .resume-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .autofill-btn {
+    background-color: #4a4a4a; 
+    color: white;
+    border: none;
+    padding: 9px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .autofill-btn:hover {
+    background-color: #333;
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .input-error {
+    border: 2px solid red;
+  }
+  
+  .error-container {
+    height: 15px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    display: block; 
+  }
+  
+  
+  .resume-builder-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 46px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .resume-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1976D2;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Inputs */
+  .resume-inputs input,
+  .resume-inputs select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .resume-inputs textarea{
+    width: 100%;
+    height: 150px !important;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .resume-inputs input:focus,
+  .resume-inputs textarea:focus,
+  .resume-inputs select:focus {
+    border-color: #1976D2;
+    box-shadow: 0px 4px 8px rgba(25, 118, 210, 0.2);
+    outline: none;
+  }
+
+  .section-container h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1565C0;
+    margin-bottom: 12px;
+  }
+  
+
+  .section-container {
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+
+.resume-builder-container .resume-inputs button {
+    width: auto; 
+    background: #1976D2;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: none;
+    /* border-radius: 6px; */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+    display: inline-block; 
+  }
+  
+
+  .resume-builder-container .resume-inputs button:hover {
+    background: #0D47A1; 
+    transform: scale(1.05);
+  }
+  
+
+  .resume-builder-container .resume-inputs button.add-btn {
+    background: #43A047; 
+  }
+  
+  .resume-builder-container .resume-inputs button.add-btn:hover {
+    background: #2E7D32; 
+  }
+  
+
+  .resume-builder-container .resume-inputs button.remove-btn {
+    background: #D32F2F; 
+  }
+  
+  .resume-builder-container .resume-inputs button.remove-btn:hover {
+    background: #B71C1C; 
+  }
+  
+  
+  /* Skill Input */
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .skill-item input {
+    flex-grow: 1;
+  }
+  
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+.summary-container {
+  position: relative;
+  width: 100%;
+}
+
+.summary-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.summary-textarea {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 35px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.ai-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.ai-icon:hover {
+  color: #0056b3;
+}
+
+
+.ai-popup {
+  position: absolute;
+  right: -255px;
+  bottom: 10px;
+  width: 250px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.ai-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Close Button */
+.close-icon {
+  margin-bottom: 11px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ff4d4d;
+}
+
+.close-icon:hover {
+  color: #cc0000;
+}
+
+/* AI Input */
+.ai-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  resize: none;
+}
+
+/* Generate Button */
+.generate-btn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background: #0056b3;
+}
+
+/* AI Response Display */
+.ai-response {
+  margin-top: 10px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Use Generated Summary */
+.use-btn {
+  margin-top: 5px;
+  width: 100%;
+  padding: 8px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.use-btn:hover {
+  background: #218838;
+}
+.resume-builder-container .resume-inputs .remove-button-style{
+          background: #D32F2F;
+          color: white;
+          border: none;
+          padding: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 6px !important;
+          cursor: pointer;
+          width: 100%;
+          margin-top: 10px;
+ }
+ .resume-builder-container .resume-inputs .remove-button-style:hover{
+  background: #D32F2F;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.progress-bar-container {
+  margin: 10px 0 20px;
+  width: 100%;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.4s ease;
+}
+
+.progress-bar-text {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: right;
+  font-weight: bold;
+}
+.char-count {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.summary-wrapper,
+.textarea-wrapper {
+  width: 100%;
+}
+
+.summary-textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 12px;
+  padding-bottom: 30px; /* space for character count */
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.char-count-inside {
+  position: absolute;
+  right: 12px;
+  bottom: 24px;
+  font-size: 12px;
+  color: #888;
+  pointer-events: none;
+}
+
